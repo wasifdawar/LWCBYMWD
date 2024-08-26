@@ -1,3 +1,26 @@
 <template>
     
+    <lightning-card  title="Two Way Data Binding">
+        <div class="slds-m-around_x-small">
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-input type="text" label="Enter some text" onfocus={handleInputFocus} onkeyup={handleChange}  onblur={handleInputBlur}></lightning-input>
+    </div>
+           
+        <h2>{fullName} is now learning {course}</h2>
+   
+</div>
+</lightning-card>
+
+
+<lightning-card  title="@Track Property">
+    <div class="slds-m-around_x-small">
+<div class="slds-p-around_medium lgc-bg">
+    <lightning-input type="text" label="Enter some text" onfocus={handleInputFocus} onkeyup={handleTrack} onblur={handleInputBlur}></lightning-input>
+</div>
+       
+    <h2>{address.city} is my city name.</h2>
+
+</div>
+</lightning-card>
+    
 </template>
